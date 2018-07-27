@@ -34,7 +34,8 @@ timeout(time: 10, unit: 'SECONDS') {
 
 'etape-3.4': {
         echo "Job 3 de l'étape 4"
-      },
+        sh '/bin/echo "Job 3 de l'étape 4" >/tmp/trace.log'
+},
 
 
     )
